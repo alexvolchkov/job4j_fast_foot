@@ -8,5 +8,5 @@ import lombok.EqualsAndHashCode;
 public class Order {
     @EqualsAndHashCode.Include
     private int id;
-    private String name;
+    private String number;
 }
