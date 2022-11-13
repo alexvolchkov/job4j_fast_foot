@@ -3,14 +3,12 @@ package ru.job4j;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.util.List;
-
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Order {
+public class OrderLine {
     @EqualsAndHashCode.Include
     private int id;
-    private String number;
-    private Customer customer;
-    private List<OrderLine> goods;
+    private Dish dish;
+    private int amountOfDish;
+    private int total;
 }
