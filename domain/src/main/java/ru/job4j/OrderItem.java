@@ -5,7 +5,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class OrderLine {
+public class OrderItem {
     @EqualsAndHashCode.Include
     private int id;
     private Dish dish;

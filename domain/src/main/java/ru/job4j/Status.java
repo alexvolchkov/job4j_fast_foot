@@ -1,9 +1,12 @@
 package ru.job4j;
 
-import lombok.Data;
-
-@Data
-public class Status {
-    private int id;
-    private String name;
+public enum Status {
+    NEW,
+    AGREED,
+    COME_COMPLETE,
+    COMPLETED,
+    TRANSFERRED_FOR_DELIVERY,
+    PAID,
+    CANCELED,
+    DONE
 }

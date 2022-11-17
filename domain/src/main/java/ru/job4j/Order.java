@@ -12,5 +12,5 @@ public class Order {
     private int id;
     private String number;
     private Customer customer;
-    private List<OrderLine> goods;
+    private List<OrderItem> goods;
 }
