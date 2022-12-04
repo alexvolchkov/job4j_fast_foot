@@ -7,4 +7,6 @@ import java.util.List;
 public interface DishService {
 
     List<Dish> findAll();
+
+    void add(Dish dish);
 }

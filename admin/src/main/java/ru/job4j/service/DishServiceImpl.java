@@ -29,6 +29,11 @@ public class DishServiceImpl implements DishService {
         ));
     }
 
+    @Override
+    public void add(Dish dish) {
+        client.postForEntity(String.format("%s/create", apiDish), dish, Dish.class).getBody();
+    }
+
     private List<Dish> getList(String url1) {
         List<Dish> body = client.exchange(
                 url1, HttpMethod.GET, null,

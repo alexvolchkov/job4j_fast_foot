@@ -17,7 +17,7 @@ public class DishServiceImpl implements DishService {
 
     @Override
     public void addDish(Dish dish) {
-
+        dishes.save(dish);
     }
 
     @Override
