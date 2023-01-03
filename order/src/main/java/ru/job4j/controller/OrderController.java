@@ -22,7 +22,7 @@ public class OrderController {
     }
 
     @PostMapping("/")
-    public ResponseEntity<Void> createOrder(@RequestBody Order order) {
+    public ResponseEntity<Order> createOrder(@RequestBody Order order) {
         var result = new ResponseEntity<>(
                 orders.createOrder(order),
                 HttpStatus.CREATED
